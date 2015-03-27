@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Sign up</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap-3.3.2-dist/css/bootstrap.min.css">
+  <script src="jquery.js"></script>
+  <script src="bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+	<div class="container-fluid">
+    		  <div class="page-header">
+  				<div class="col-sm-offset-2 col-sm-8" style=";"><h1><u>Student Portal</u></h1></div>
+ 			  </div>
+			  
+			  <div class="jumbotron ">
+                 <div role="tabpanel">       
+                          <!-- Nav tabs -->
+                   <ul class="nav nav-tabs" role="tablist">
+                      <li role="presentation" class="active"><a href="#user" aria-controls="home" role="tab" data-toggle="tab">User</a></li>
+                      <li role="presentation"><a href="#admin" aria-controls="profile" role="tab" data-toggle="tab">Admin</a></li>
+                            
+                   </ul>
+                        
+                   <!-- Tab panes -->
+                      <div class="tab-content">
+                         <div role="tabpanel" class="tab-pane active" id="user">
+                              <form method="post" name ="myForm"  action="http:\\localhost\labwebsite\.php">
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">Username</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Username">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                  </div>
+                                  
+                                  <div class="col-sm-3" >
+                                  <button type="submit" class="btn btn-primary btn-lg btn-group-justified" >Submit</button>
+                                  </div>
+                                  <div class="col-sm-3" >
+                                   <!-- Button trigger modal -->
+                                    <a href="sign_up.html" type="button" class="btn btn-primary btn-lg  btn-group-justified" >
+                                      Sign Up
+                                    </a>
+                                  </div>
+                                  <br>
+                              </form>
+                           </div>
+                                        
+                           <div role="tabpanel" class="tab-pane" id="admin">
+                            <form method="post" name ="myForm"  action="http:\\localhost\labwebsite\login_admin.php">
+                                  <div class="form-group">
+                                    <label for="exampleInputEmail1">Admin</label>
+                                    <input type="text" class="form-control"  name="admin" placeholder="Admin Name">
+                                  </div>
+                                  <div class="form-group">
+                                    <label for="exampleInputPassword1">Password</label>
+                                    <input type="password" class="form-control"  name="adm_psswd" placeholder="Password">
+                                  </div>
+                                  
+                                  <div class="col-sm-3" >
+                                  <button type="submit" class="btn btn-primary btn-lg btn-group-justified" >Submit</button>
+                                  </div>
+                                  <div class="col-sm-3" >
+                                   <!-- Button trigger modal -->
+                                    <a href="admin_sign_up.html" type="button" class="btn btn-primary btn-lg  btn-group-justified" >
+                                      Sign Up
+                                    </a>
+                                  </div>
+                                  <br>
+                            </form>
+                            </div>
+                            
+                          </div>
+                        
+                        </div>	
+		</div>
+	</div>
+</body>
+
+</html>
